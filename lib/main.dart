@@ -62,11 +62,11 @@ class _BackgroundVideoState extends State<BackgroundVideo> {
             ),
             
             Align(
-              alignment: Alignment.bottomRight,
+              alignment: Alignment.centerRight,
               child: RaisedButton(
               onPressed: (){
                 Navigator.of(context).pushNamed("/pageone");
-              }, child: Text('Page 1')
+              }, child: Image.asset("videos/nabeel.png")
               )
             ),
              Align(
