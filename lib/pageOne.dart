@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:videotest/image.dart';
 
 class Page1 extends StatelessWidget{
   @override
@@ -7,14 +8,21 @@ class Page1 extends StatelessWidget{
       appBar: AppBar(
         title: Text('Page 1')
       ),
-      body: Center(
-        child: RaisedButton(
-        onPressed: (){
-          Navigator.pop(context);
+      body: Stack(
+        children: <Widget>[
+          Center(
+            child: RaisedButton(
+             onPressed: (){
+            Navigator.pop(context);
             },
             child: Text('Go Back To Main Page')
           )
-        ) 
+        ),
+        ImageforUse(),
+        
+        ],
+      ),
+        
       );
   }
 }
