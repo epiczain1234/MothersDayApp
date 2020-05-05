@@ -46,6 +46,10 @@ flutter:
   assets:
    - videos/drops.mp4
    - videos/sample.jpg
+   - videos/nabeel.PNG
+   - videos/ilham.PNG
+   - videos/hanya.PNG
+   - videos/zain.PNG
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

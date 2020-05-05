@@ -62,36 +62,64 @@ class _BackgroundVideoState extends State<BackgroundVideo> {
             ),
             
             Align(
-              alignment: Alignment.centerRight,
-              child: RaisedButton(
-              onPressed: (){
-                Navigator.of(context).pushNamed("/pageone");
-              }, child: Image.asset("videos/nabeel.png")
-              )
+              alignment: Alignment.center,
+              child: Container(
+                  child: FlatButton(
+                       onPressed: (){
+                         Navigator.of(context).pushNamed("/pageone");
+                       },
+                     padding: EdgeInsets.all(1.0),
+                    child: Image.asset('videos/zain.PNG',
+                    width: 300,
+                    height: 300
+                    ,)
+                    )
+                    )
             ),
              Align(
-            alignment: Alignment.bottomLeft,
-          child: RaisedButton(
-            onPressed: (){
-               Navigator.of(context).pushNamed("/pagetwo");
-            }, child: Text('Page 2')
-              )
+            alignment: Alignment.bottomCenter,
+          child: Container(
+                child: FlatButton(
+                       onPressed: (){
+                         Navigator.of(context).pushNamed("/pagetwo");
+                       },
+                     padding: EdgeInsets.all(1.0),
+                    child: Image.asset('videos/ilham.PNG',
+                    width: 100,
+                    height: 100
+                    ,)
+                    )
+                    )
             ),
             Align(
             alignment: Alignment.topRight,
-          child: RaisedButton(
-            onPressed: (){
-               Navigator.of(context).pushNamed("/pagethree");
-            }, child: Text('Page 3')
-              )
+           child: Container(
+                  child: FlatButton(
+                       onPressed: (){
+                         Navigator.of(context).pushNamed("/pagethree");
+                       },
+                     padding: EdgeInsets.all(1.0),
+                    child: Image.asset('videos/nabeel.PNG',
+                    width: 100,
+                    height: 100
+                    ,)
+                    )
+                    )
             ),
             Align(
             alignment: Alignment.topLeft,
-          child: RaisedButton(
-            onPressed: (){
-               Navigator.of(context).pushNamed("/pagefour");
-            }, child: Text('Page 4')
-              )
+           child: Container(
+                  child: FlatButton(
+                       onPressed: (){
+                         Navigator.of(context).pushNamed("/pagefour");
+                       },
+                     padding: EdgeInsets.all(1.0),
+                    child: Image.asset('videos/hanya.PNG',
+                    width: 100,
+                    height: 100
+                    ,)
+                    )
+                    )
             ),
           ],
         ),
