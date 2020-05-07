@@ -5,15 +5,42 @@ class Page3 extends StatelessWidget{
   Widget build (BuildContext context){
     return  Scaffold(
       appBar: AppBar(
-        title: Text('Page 3')
+        title: Text('Nabeel\'s Card'),
+        backgroundColor: Colors.deepPurple
       ),
-      body: Center(
-        child: RaisedButton(
-        onPressed: (){
-          Navigator.pop(context);
-            },
-            child: Text('3 Go Back To Main Page')
-          )
+      body: Stack(
+        children: <Widget>[
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Card(child: 
+        Text('''  
+        I love you mom. I couldn't think of all 
+        the things I love about you. But, I like
+        how you never force us to do anything. 
+        I like eating out with you. I like how old 
+        and funny you are. I like the rolls that
+        you make for us.
+           - Poop
+        ''',
+        style: TextStyle(fontSize:15,
+        height: 2.5
+        ),
+        ),
+        )
+        ),
+        Align(
+          alignment: Alignment.topCenter,
+          child: Card(
+          child: Image.asset(
+            'videos/nabeel2.jpg',
+            height: 400,
+            width: 300,
+            ),
+            
+        )
+        )
+        ],
+      
         ) 
       );
   }

@@ -44,12 +44,18 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - videos/drops.mp4
-   - videos/sample.jpg
+   - videos/zain2.jpg
    - videos/nabeel.PNG
    - videos/ilham.PNG
    - videos/hanya.PNG
    - videos/zain.PNG
+   - videos/ilham2.jpg
+   - videos/nabeel2.jpg
+   - videos/hanya2.jpg
+   - videos/album.mp4
+   - videos/drops.mp4
+   - videos/hearts.mp4
+   
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

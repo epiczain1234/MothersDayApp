@@ -34,7 +34,7 @@ class _BackgroundVideoState extends State<BackgroundVideo> {
   void initState() {
     super.initState();
     _controller = VideoPlayerController.asset(
-        'videos/drops.mp4')
+        'videos/hearts.mp4')
       ..initialize().then((_) {
         _controller.play();
         _controller.setLooping(true);
@@ -62,28 +62,29 @@ class _BackgroundVideoState extends State<BackgroundVideo> {
             ),
             
             Align(
-              alignment: Alignment.center,
+              alignment: Alignment.topRight,
               child: Container(
                   child: FlatButton(
                        onPressed: (){
                          Navigator.of(context).pushNamed("/pageone");
                        },
-                     padding: EdgeInsets.all(1.0),
+                     padding: EdgeInsets.all(3.0),
                     child: Image.asset('videos/zain.PNG',
-                    width: 300,
-                    height: 300
-                    ,)
+                    width: 100,
+                    height: 100,
+                    ),
+                    
                     )
                     )
             ),
              Align(
-            alignment: Alignment.bottomCenter,
+            alignment: Alignment.bottomLeft,
           child: Container(
                 child: FlatButton(
                        onPressed: (){
                          Navigator.of(context).pushNamed("/pagetwo");
                        },
-                     padding: EdgeInsets.all(1.0),
+                     padding: EdgeInsets.all(3.0),
                     child: Image.asset('videos/ilham.PNG',
                     width: 100,
                     height: 100
@@ -92,13 +93,13 @@ class _BackgroundVideoState extends State<BackgroundVideo> {
                     )
             ),
             Align(
-            alignment: Alignment.topRight,
+            alignment: Alignment.bottomRight,
            child: Container(
                   child: FlatButton(
                        onPressed: (){
                          Navigator.of(context).pushNamed("/pagethree");
                        },
-                     padding: EdgeInsets.all(1.0),
+                     padding: EdgeInsets.all(3.0),
                     child: Image.asset('videos/nabeel.PNG',
                     width: 100,
                     height: 100
@@ -113,7 +114,7 @@ class _BackgroundVideoState extends State<BackgroundVideo> {
                        onPressed: (){
                          Navigator.of(context).pushNamed("/pagefour");
                        },
-                     padding: EdgeInsets.all(1.0),
+                     padding: EdgeInsets.all(3.0),
                     child: Image.asset('videos/hanya.PNG',
                     width: 100,
                     height: 100
