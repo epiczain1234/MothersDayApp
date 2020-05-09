@@ -25,7 +25,7 @@ class Page2 extends StatelessWidget{
         To the one I look up to and aspire to be
         She’s shown me to never take defeat
 
-        To the one who never threw me away
+        To the one who was there when skies were gray
         I wish you a happy mother’s day
         -Ilham Mukati
         ''',
